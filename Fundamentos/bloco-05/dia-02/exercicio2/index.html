@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <script>
+        //Definindo Pai
+        let corpo = document.getElementsByTagName("body")[0];
+        //Criando Elemento
+        function criarElemento(nomeElemento,classeElemento,textoElemento){
+            let novoElemento = document.createElement(nomeElemento);
+            novoElemento.className = classeElemento;
+            novoElemento.innerText = textoElemento;
+            return(novoElemento)
+        }
+
+        corpo.appendChild(criarElemento('h1','title','Exercício 5.2 - JavaScript DOM'));
+        corpo.appendChild(criarElemento('main','main-content',null))
+
+        let principal = document.getElementsByTagName("main")[0];
+
+        principal.appendChild(criarElemento('section','center-content',''))
+        principal.firstElementChild.appendChild(criarElemento('p',null,'Texto relacionado a resoloção para desafio do course da aula'))
+        principal.appendChild(criarElemento('section','left-content',''))
+        principal.appendChild(criarElemento('section','right-content',''))
+        principal.children[1].appendChild(criarElemento('src','small-image','https://picsum.photos/200'))
+        principal.children[2].appendChild(criarElemento('ol','',''));
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','UM'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','DOIS'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','TRÊS'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','QUATRO'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','CINCO'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','SEIS'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','SETE'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','OITO'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','NOVE'))
+        principal.children[2].firstElementChild.appendChild(criarElemento('li','','DEZ'))
+
+        principal.appendChild(criarElemento('h3','title, description','TITULO 1!'))
+        principal.appendChild(criarElemento('h3','title, description','TITULO 2!'))
+        principal.appendChild(criarElemento('h3','title, description','TITULO 3!'))
+
+       document.getElementsByClassName("left-content")[0].remove()
+       document.getElementsByClassName("right-content")[0].style.marginRight = "auto"
+       document.getElementsByClassName("center-content")[0].parentElement.style.backgroundColor = "green"
+
+       document.getElementsByClassName("right-content")[0].firstChild.lastChild.remove()
+       document.getElementsByClassName("right-content")[0].firstChild.lastChild.previousElementSibling.remove()
+    </script>
+  </body>
+</html>
