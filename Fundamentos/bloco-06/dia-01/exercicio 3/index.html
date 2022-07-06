@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário TrybeTrip</h1>
+        <form action="" method="get">
+            <div class="linhas">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" />
+            </div>
+            <div class="linhas">
+                <label for="">Email</label>
+                <input type="email" />
+            </div>
+            <div class="linhas">
+                <label for="destino1">
+                    <input type="radio" name="destino" id="destino1" value="Londres" />Londres
+                </label>
+
+                <label for="destino2">
+                    <input type="radio" name="destino" id="destino2" value="Goias" />Goias
+                </label>
+
+                <label for="destino3"><input type="radio" name="destino" id="destino3" value="Varginha" />Varginha
+                </label>
+
+                <label for="destino4">
+                    <input type="radio" name="destino" id="destino4" value="portugal" />Portugal
+                </label>
+            </div>
+            <div class="linhas">
+                <label for="motivo" >Motivos para ganhar a TrybeTrip</label><br>
+                <textarea class="motivo" name="motivo" id="motivo" cols="30" rows="10"></textarea>
+            </div>
+            <div class="linhas">
+                <label for="data">Melhor Data</label>
+                <input type="date" id="data">
+            </div>
+            <div class="linhas">
+                <label for="pergunta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                <input type="checkbox" id="pergunta">
+            </div>
+            <div class="linhas">
+                <label for="permissao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                <input type="checkbox" id="permissao">
+            </div>
+            <button type="submit" id="busca">ENVIAR</button>
+        </form>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
