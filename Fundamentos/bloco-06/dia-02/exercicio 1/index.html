@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <h1 class="display-4 text-center text-secondary">Formulário TrybeTrip</h1>
+    </header>
+
+    <main class="container-lg border rounded p-5">
+        <form action="" method="get">
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" id="nome" />
+                <label class="floatingInput" for="nome">Nome</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input class="form-control" type="email" id="email" />
+                <label class="floatingInput" for="email">Email</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="destino1" name="destino" type="radio" />
+                <label class="form-check-label" for="destino1">Londres</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="destino2" name="destino" type="radio" />
+                <label class="form-check-label" for="destino2">Goias</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="destino3" name="destino" type="radio" />
+                <label class="form-check-label" for="destino3">Varginha</label>
+            </div>
+
+            <div>
+                <input class="form-check-input" id="destino4" name="destino" type="radio" />
+                <label class="form-check-label" for="destino4">Portugal</label>
+            </div>
+
+            <div class="form-floating mt-4 mb-2">
+                <textarea class="form-control" name="motivo" id="motivo" cols="30" rows="10" style="height: 100px"></textarea>
+                <label for="motivo">Motivos para ganhar a TrybeTrip</label>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input class="form-control p-3 pt-4" type="date" id="data" />
+                <label class="floatingInput p-3 pt-2" for="data">Melhor Data</label> 
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pergunta"/>
+                <label class="form-check-label" for="pergunta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="permissao"/>
+                <label class="form-check-label" for="permissao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                
+            </div>
+            
+            <div class="mt-5">
+                <button class="btn btn-primary" type="submit">ENVIAR</button>
+                <button class="btn btn-secondary" type="reset">LIMPAR</button>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
