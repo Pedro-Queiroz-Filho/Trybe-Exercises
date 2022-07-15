@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    border: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#contador {
+    font-size: 40px;
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 5px;
+   
+}
+
+#botao {
+    background-color: rgb(203, 231, 255);
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+
+#header {
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    height: 30%;
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
