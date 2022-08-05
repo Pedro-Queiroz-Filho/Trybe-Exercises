@@ -1,0 +1,23 @@
+{
+  "name": "trybe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercicio1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-Queiroz-Filho/Trybe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedro-Queiroz-Filho/Trybe/issues"
+  },
+  "homepage": "https://github.com/Pedro-Queiroz-Filho/Trybe#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
